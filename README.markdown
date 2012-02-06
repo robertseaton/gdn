@@ -5,32 +5,32 @@ Prerequisites:
 
 * GMP
 
-{% highlight sh %}
+```
 $ make
 $ sudo make install
-{% end highlight %}
+```
 
 ## Usage
 
-{% highlight sh %}
+```
 $ gdn
 usage: gdn
        -d, --decode [number]
        -e, --encode [expression]
-{% end highlight %}
+```
 
 ## Examples
 
 Encoding an expression:
-{% highlight sh %}
+```
 $ gdn -e 3.145 + 34
 112081464903105670637591531763928371813694886928414224917361808114333329982647407249611190420720023771253296305562636120
-{% endhighlight %}
+```
 
 Decoding a Gödel number:
-{% highlight sh %}
+```
 $ gdn -d 112081464903105670637591531763928371813694886928414224917361808114333329982647407249611190420720023771253296305562636120
 3.145 + 34
-{% endhighlight %}
+```
 
 Depending on your shell, you may have to wrap certain expressions in quotation marks. For example, on a shell with file globbing, `gdn -e 2 * 2` will error out because the shell will replace `*` with the files in the current directory. 

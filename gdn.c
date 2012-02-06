@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <gmp.h>
-#include <assert.h>
 #include <stdint.h>
 #include <stdlib.h>
-
-#define MAX 100
 
 const char SYMBOLS[] = "1234567890./+=-()*^ ";
 
